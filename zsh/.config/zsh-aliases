@@ -1,0 +1,53 @@
+#!/bin/bash
+
+alias zsh_update_plugins="find "$ZDOTDIR/plugins" -type d -exec test -e '{}/.git' ';' -print0 | xargs -I -0 git -C {} pull -q"
+alias nvimrc='nvim ~/.config/nvim/'
+
+# Get fastest mirrors
+alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --lastest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --lastest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrord="sudo reflector --lastest 50 --number 20 --sort age save /etc/pacman.d/mirrorlist"
+
+# Colorize grep output
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+# Confirm before major file manipulations
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -i'
+
+# Easier to risk disk stats
+alias df='df -h'
+alias free='free -m'	# Shows sizes in MB
+
+# Get top processes eating memory (RAM)
+alias psmem='ps auxf | sort -nr -k 4 | head -5'
+
+# Get top processes eating cpu
+alias pscpu='ps auxf | sort -nr -k 3 | head -5'
+
+# Nvim aliases
+alias vi="nvim"
+alias vim="nvim"
+
+# TODO: Create some aliases for key-generation, signature checking
+#
+#
+#
+
+
+# Colorize ls 
+case "$(uname -s)" in
+
+Darwin)
+	alias ls='ls -G'
+	;;
+Linux)
+	alias ls='ls --color=auto'
+	;;
+*)
+	;;
+esac
