@@ -33,6 +33,16 @@ alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 alias vi="nvim"
 alias vim="nvim"
 
+# Easy pacman call
+alias pacman="sudo pacman"
+
+# Git aliases
+alias ga="git add"
+alias gc="git commit"
+
+# Quick access to dotfiles
+alias mydot="cd ~/my_dotfiles"
+
 # TODO: Create some aliases for key-generation, signature checking
 #
 #
