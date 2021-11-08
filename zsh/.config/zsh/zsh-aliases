@@ -14,6 +14,10 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
+# Some filesystem shortcuts
+alias ll="ls -lh"
+alias la="ls -a"
+
 # Confirm before major file manipulations
 alias cp='cp -i'
 alias mv='mv -i'
@@ -37,6 +41,7 @@ alias vim="nvim"
 alias pacman="sudo pacman"
 
 # Git aliases
+alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
 
