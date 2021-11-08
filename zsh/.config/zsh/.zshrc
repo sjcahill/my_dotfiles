@@ -44,7 +44,9 @@ zsh_add_plugin "hlissner/zsh-autopair"
 # More completions available @ https://github.com/zsh-users/zsh-completions
 
 # Key-bindings
-bindkey '^[[P' delete-char
+bindkey '^[[3~' delete-char
+bindkey '^[[1~' beginning-of-line
+bindkey '^[[4~' end-of-line
 bindkey "^p" up-line-or-beginning-search # Up
 bindkey "^n" down-line-or-beginning-search # Down
 bindkey "^k" up-line-or-beginning-search # Up
