@@ -1,11 +1,3 @@
-#!/bin/bash
-
-HISTSIZE=10000
-SAVEHIST=10000
-
-export PATH="$HOME/.local/bin":$PATH
-export PATH=$HOME/.cargo/bin:$PATH
-
 
 # >>> JVM installed by coursier >>>
 export JAVA_HOME="/home/sj/.cache/coursier/jvm/adopt@1.8.0-292"

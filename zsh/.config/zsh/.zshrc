@@ -31,7 +31,7 @@ autoload -Uz colors && colors
 source "$ZDOTDIR/zsh-functions"
 
 # Sourcing files with `zsh-add-file` function from `zsh-functions` file
-zsh_add_file "zsh_exports"
+zsh_add_file "zsh-exports"
 zsh_add_file "zsh-vim-mode"
 zsh_add_file "zsh-aliases"
 zsh_add_file "zsh-prompt"
