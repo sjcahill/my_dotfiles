@@ -34,8 +34,11 @@ alias psmem='ps auxf | sort -nr -k 4 | head -5'
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 
 # Nvim aliases
-alias vi="nvim"
-alias vim="nvim"
+alias vi="lvim"
+alias vim="lvim"
+
+# LunarVim alias
+alias lvim="$HOME/.local/bin/lvim"
 
 # Easy pacman call
 alias pacman="sudo pacman"
