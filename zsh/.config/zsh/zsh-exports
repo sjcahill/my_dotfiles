@@ -7,15 +7,3 @@ export PATH="$HOME/.local/bin":$PATH
 export PATH=$HOME/.cargo/bin:$PATH
 
 
-# >>> JVM installed by coursier >>>
-if [ -d "$HOME/.cache/coursier/jvm" ]; then
-	export JAVA_HOME="/home/sj/.cache/coursier/jvm/adopt@1.8.0-292"
-	export PATH="$PATH:/home/sj/.cache/coursier/jvm/adopt@1.8.0-292/bin"
-fi
-# <<< JVM installed by coursier <<<
-
-# >>> coursier install directory >>>
-if [ -d "$HOME/.local/share/coursier/bin" ]; then
-	export PATH="$PATH:/home/sj/.local/share/coursier/bin"
-fi
-# <<< coursier install directory <<<

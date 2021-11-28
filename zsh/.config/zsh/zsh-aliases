@@ -52,9 +52,10 @@ alias gc="git commit"
 alias mydot="cd ~/my_dotfiles"
 
 # TODO: Create some aliases for key-generation, signature checking
-#
-#
-#
+
+# Scala aliases
+alias scala2="$HOME/.local/share/coursier/bin/scala"
+alias scala="$HOME/.local/share/coursier/bin/scala3"
 
 
 # Colorize ls 
