@@ -52,6 +52,11 @@ return packer.startup(function(use)
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
+  use "akinsho/toggleterm.nvim"
+  use "lewis6991/impatient.nvim"
+  use "lukas-reineke/indent-blankline.nvim"
+  use "antoinemadec/FixCursorHold.nvim" -- Needed to fix lsp doc highlight
+  use "folke/which-key.nvim"
 
   -- Colorscheme plugins
   -- `use lunarvim/colorschemes` -> A bunch of colorschemes to try out

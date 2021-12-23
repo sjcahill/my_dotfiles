@@ -63,14 +63,16 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 
 
--- TERMINAL --
--- Better Terminal Navigation
-keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
-keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
-keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
-keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
+--[[ -- TERMINAL -- ]]
+--[[ -- Better Terminal Navigation ]]
+--[[ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts) ]]
+--[[ keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts) ]]
+--[[ keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts) ]]
+--[[ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts) ]]
 
+-- Nvim-tree
+keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
 
-
-
-
+-- ToggleTerm
+keymap("n", "<leader>t", ":ToggleTerm<CR>", opts)
+keymap("t", "<C-d>", "exit<CR>", opts)
