@@ -33,7 +33,7 @@ then
     unset f
 fi
 
-xrandr --output Virtual-1 --mode 1920x1080
+xrandr --output Virtual-1 --mode 2560x1440
 
 nitrogen --restore &
 picom -f &
