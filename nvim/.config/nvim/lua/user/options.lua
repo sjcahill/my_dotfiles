@@ -38,6 +38,7 @@ local options = {
 }  
 
 vim.opt.shortmess:append "c"              -- Hide certain `ins-completion-menu` messages. Such as "match 1 of 2", "pattern not found"
+vim.opt_global.shortmess:remove("F")
 
 for k, v in pairs(options) do
   vim.opt[k] = v

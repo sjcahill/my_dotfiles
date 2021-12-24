@@ -17,5 +17,6 @@ require "user.impatient"
 require "user.indentline"
 require "user.whichkey"
 require "user.autocommands"
+require "user.scalametals"
 
 vim.cmd [[au VimEnter * setl fo-=cro]]

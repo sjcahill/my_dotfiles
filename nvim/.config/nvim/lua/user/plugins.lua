@@ -58,6 +58,12 @@ return packer.startup(function(use)
   use "antoinemadec/FixCursorHold.nvim" -- Needed to fix lsp doc highlight
   use "folke/which-key.nvim"
 
+  -- Scala Metals
+  use ({
+    'scalameta/nvim-metals',
+    requires = { "nvim-lua/plenary.nvim" }
+  })
+
   -- Colorscheme plugins
   -- `use lunarvim/colorschemes` -> A bunch of colorschemes to try out
   use "lunarvim/darkplus.nvim"
