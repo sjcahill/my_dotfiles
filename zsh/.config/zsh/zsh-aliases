@@ -34,11 +34,8 @@ alias psmem='ps auxf | sort -nr -k 4 | head -5'
 alias pscpu='ps auxf | sort -nr -k 3 | head -5'
 
 # Nvim aliases
-alias vi="lvim"
-alias vim="lvim"
-
-# LunarVim alias
-alias lvim="$HOME/.local/bin/lvim"
+alias vim="nvim"
+alias n="nvim"
 
 # Easy pacman call
 alias pacman="sudo pacman"
@@ -48,10 +45,15 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
 
-# Quick access to dotfiles
+# Quick access to dotfiles and configs
 alias mydot="cd ~/my_dotfiles"
+alias nconf="cd ~/my_dotfiles/nvim/.config/nvim"
+alias qconf="cd ~/my_dotfiles/qtile/.config/qtile"
+alias zconf="cd ~/my_dotfiles/zsh/.config/zsh"
 
 # TODO: Create some aliases for key-generation, signature checking
+alias start-agent="eval $(ssh-agent -s)"
+alias git-key="ssh-add ~/.ssh/arch-hyperv"
 
 # Scala aliases
 alias scala2="$HOME/.local/share/coursier/bin/scala"
