@@ -2,7 +2,7 @@
 vim.cmd[[
   augroup lsp
   au! 
-  au FileType scala setlocal omnifun=v:lua.vim.lsp.omnifunc
+  au FileType scala setlocal omnifunc=v:lua.vim.lsp.omnifunc
   au FileType scala,sbt lua require("metals").initialize_or_attach({metals_config})
   augroup end
 ]]
