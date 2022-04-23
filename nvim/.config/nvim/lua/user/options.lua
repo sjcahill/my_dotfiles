@@ -18,7 +18,7 @@ local options = {
 	splitbelow = true,										  -- force all horizontal splits to open below current window
 	splitright = true,										  -- force all verticle splits to open to the right
 	swapfile = false,										    -- God I hate swapfiles
-	-- termguicolors,                    	  -- set term gui colors (most terminals support this)
+  termguicolors = true,                    	  -- set term gui colors (most terminals support this)
 	timeoutlen = 800,										    -- time to wait for a mapped sequence to complete (in ms)
 	undofile = true,										    -- enable persistent undo
 	updatetime = 300,                       -- faster completion (4000 ms by default)

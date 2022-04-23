@@ -32,6 +32,8 @@ from libqtile.lazy import lazy
 
 mod = "mod4"
 terminal = 'kitty'
+firefox = 'firefox'
+chrome = 'google-chrome-stable'
 
 keys = [
     # A list of available commands that can be bound to keys can be found
@@ -73,6 +75,8 @@ keys = [
     Key([mod, "shift"], "Return", lazy.layout.toggle_split(),
         desc="Toggle between split and unsplit sides of stack"),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
+    Key([mod, "shift"], "f", lazy.spawn(firefox), desc="Launch Firefox"),
+    Key([mod, "shift"], "g", lazy.spawn(chrome), desc="Launch Google Chrome"),
 
     # Toggle between different layouts as defined below
     Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
@@ -118,7 +122,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font='sans',
+    font='JetBrainsMono Nerd Font Mono',
     fontsize=12,
     padding=3,
 )

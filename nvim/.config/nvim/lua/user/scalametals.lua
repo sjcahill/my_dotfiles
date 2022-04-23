@@ -15,11 +15,12 @@ vim.cmd[[
 ]]
 
 -- LSP Setup
-metals_config = require("metals").bare_config()
+local metals_config = require("metals").bare_config()
 
 -- Custom Settings
 metals_config.settings = {
   showImplicitArguments = true,
+  fallbackScalaVersion = "3.1.0",
 }
 
 -- Overide default handler behavior
@@ -43,5 +44,5 @@ vim.cmd[[hi! link LspReferenceText CursorColumn]]
 vim.cmd[[hi! link LspReferenceRead CursorColumn]]
 vim.cmd[[hi! link LspReferenceWrite CursorColumn]]
 
--- Provides a niec little format command (:Format)
+-- Provides a nice format command (:Format)
 vim.cmd[[command! Format lua vim.lsp.buf.formatting()]]

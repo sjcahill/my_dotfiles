@@ -43,6 +43,8 @@ alias pacman="sudo pacman"
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit"
+alias gp="git push"
+alias gpo="git push origin"
 
 # Quick access to dotfiles and configs
 alias mydot="cd ~/my_dotfiles"

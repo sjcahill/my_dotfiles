@@ -43,6 +43,9 @@ zsh_add_plugin "hlissner/zsh-autopair"
 # More plugins available @ https://github.com/unixorn/awesome-zsh-plugins
 # More completions available @ https://github.com/zsh-users/zsh-completions
 
+# Poetry dependency manager for Python
+fpath+="$HOME/.zfunc"
+
 # Key-bindings
 bindkey '^[[3~' delete-char
 bindkey '^[[1~' beginning-of-line
@@ -58,7 +61,7 @@ compinit
 setxkbmap -option caps:escape
 
 # Environment variables for applications
-export EDITOR"lvim"
+export EDITOR"nvim"
 export TERMINAL="kitty"
 export BROWSER="firefox"
 
@@ -77,3 +80,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+
+export PATH="$HOME/.poetry/bin:$PATH"
